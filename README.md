@@ -1,1 +1,1 @@
-NOVZ PREOJEKT PRE ZBOR
+Projekt pre zbor - stranka
