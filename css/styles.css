@@ -1,37 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .hlavička {
-    background-color: lightblue;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
 .logo {
-    font-size: 2vw;
-    color: white;
+  font-size: 2vw;
+  color: white;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 li {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.hero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.hero-bckr img {
+  filter: brightness(60%);
+  z-index: 1;
+  width: 100vw;
+  height: auto;
+}
+
+.heroText {
+  position: absolute;
+
+  z-index: 2;
+}
+
+.heroText h1,
+p {
+  text-align: center;
+  color: white;
 }
