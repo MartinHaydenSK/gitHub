@@ -39,7 +39,7 @@ li {
 a {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 110%;
+  font-size: 80%;
   text-decoration: none;
   color: white;
 }
@@ -65,17 +65,113 @@ a {
 
 .heroText {
   position: absolute;
+  display: flex;
+  flex-direction: column;
 
+  width: 900px;
   z-index: 2;
 }
 
+.hero .heroText button {
+  margin: 20px auto;
+}
 .hero .heroText h1 {
-  font-size: 280%;
+  font-size: 380%;
   text-decoration: underline;
 }
 
 .heroText h1,
 p {
+  font-size: 150%;
   text-align: center;
   color: white;
+}
+
+.domovOnas {
+  position: relative;
+  display: flex;
+  background-color: #0d5aff;
+  overflow: hidden;
+}
+
+.domovOnas article {
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.domovOnas article p,
+h1 {
+  color: white;
+  text-align: justify;
+}
+
+.domovOnas article h1 {
+  font-size: 290%;
+}
+
+.domovOnas article p {
+  font-size: 120%;
+}
+
+button {
+  width: 150px;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffbb00;
+  color: white;
+}
+
+.domovOnas .kontajnerSikmyObrazok {
+  position: relative;
+  z-index: 3;
+}
+
+.domovOnas div img {
+  width: 55vw;
+  height: 100%;
+}
+
+.domovOnas .kontajnerSikmyObrazok::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 200%;
+  transform: rotate(15deg);
+  left: -50px;
+  top: -390px;
+  background-color: #0d5aff;
+}
+
+.backGroundShapes {
+  position: absolute;
+}
+
+.backGroundShapes .shape {
+  transform: rotate(-150deg);
+  position: absolute;
+  width: 250px;
+  background-color: white;
+  opacity: 0.1;
+  border-radius: 25px;
+  height: 100px;
+}
+
+.One {
+  left: 320px;
+}
+
+.Second {
+  top: 450px;
+  left: 250px;
+}
+
+.Third {
+  left: 80px;
+  top: 150px;
 }
