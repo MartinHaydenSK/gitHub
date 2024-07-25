@@ -88,11 +88,24 @@ p {
 }
 
 .domovOnas {
+  z-index: 0;
   height: 80vh;
   position: relative;
   display: flex;
   background-color: #0d5aff;
   overflow: hidden;
+}
+
+.domovOnas::before {
+  z-index: 5;
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/backgroundOnasDomov.png");
+  background-size: cover;
+  opacity: 0.3;
 }
 
 .domovOnas article {
@@ -152,6 +165,7 @@ button {
 }
 
 .domovSBS {
+  overflow: hidden;
   background-color: red;
   position: relative;
   display: flex;
