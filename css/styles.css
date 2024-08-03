@@ -11,7 +11,7 @@
 }
 
 .hlavička {
-  z-index: 5;
+  z-index: 20;
   width: 100%;
   position: fixed;
   background-color: #304c89;
@@ -44,11 +44,11 @@ a {
   color: white;
 }
 
-.hero {
+.hero,
+.domovSBS {
   display: flex;
   position: relative;
   justify-content: center;
-
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -75,12 +75,15 @@ a {
 .hero .heroText button {
   margin: 20px auto;
 }
-.hero .heroText h1 {
+.hero .heroText h1,
+.domovSBS article h1 {
   font-size: 380%;
   text-decoration: underline;
 }
 
 .heroText h1,
+p,
+.domovSBS article h1,
 p {
   font-size: 150%;
   text-align: center;
@@ -88,7 +91,6 @@ p {
 }
 
 .domovOnas {
-  z-index: 0;
   height: 80vh;
   position: relative;
   display: flex;
@@ -97,10 +99,8 @@ p {
 }
 
 .domovOnas::before {
-  z-index: 5;
   content: "";
   position: absolute;
-
   width: 100%;
   height: 100%;
   background-image: url("../img/backgroundOnasDomov.png");
@@ -110,7 +110,7 @@ p {
 
 .domovOnas article {
   width: 55vw;
-  z-index: 4;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,11 +145,9 @@ button {
 .domovOnas .kontajnerSikmyObrazok {
   overflow: hidden;
   position: relative;
-  z-index: 3;
 }
 
 .domovOnas div img {
-  width: i;
   height: 100%;
 }
 
@@ -164,29 +162,65 @@ button {
   background-color: #0d5aff;
 }
 
-.domovSBS {
-  overflow: hidden;
-  background-color: red;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .domovSBS article {
-  z-index: 6;
+  z-index: 2;
   width: 60vw;
   position: absolute;
 }
 
 .domovSBS article h1 {
   text-align: center;
-  font-size: 350%;
+  font-size: 380%;
 }
 
 .domovSBS img {
   filter: brightness(70%);
   width: 100%;
-  z-index: 5;
+
   height: auto;
+}
+
+.domovVeduciZboru {
+  background-color: #0d5aff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 90vh;
+}
+
+.domovVeduciZboru h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 380%;
+}
+
+.domovVeduciZboru article {
+  margin: 20px;
+  gap: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.domovVeduciZboru article div {
+  order: 2;
+}
+
+.domovVeduciZboru article div p {
+  text-align: left;
+}
+
+.domovVeduciZboru article h2 {
+  font-size: 200%;
+  color: white;
+}
+
+.domovVeduciZboru article img {
+  order: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: none;
 }
