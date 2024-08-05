@@ -246,3 +246,95 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+.domovAkcieZbor h1 {
+  background-color: #648de5;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1 1 5 green;
+  font-size: 350%;
+}
+
+.domovAkcieZbor article {
+  display: flex;
+}
+
+.domovAkcieZbor article:nth-child(even) div {
+  order: 1;
+}
+
+.domovAkcieZbor article div {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 0;
+}
+
+.domovAkcieZbor article div h2 {
+  color: white;
+  font-size: 250%;
+}
+
+.domovAkcieZbor article div p {
+  text-align: justify;
+}
+
+.domovAkcieZbor article span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex: 1 1 0;
+}
+
+.domovAkcieZbor article:nth-child(odd) span::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200%;
+  top: -50px;
+  left: -150px;
+  background-color: #304c89;
+  transform: rotate(13deg);
+}
+
+.domovAkcieZbor .domovAkcieZborVBS span::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200%;
+  top: -50px;
+  right: -50px;
+  background-color: #648de5;
+  transform: rotate(13deg);
+}
+
+.domovAkcieZbor .domovAkcieZborVylety span::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200%;
+  top: -50px;
+  right: -50px;
+  background-color: #376de1;
+  transform: rotate(13deg);
+}
+
+.domovAkcieZbor .domovAkcieZborVBS {
+  background-color: #648de5;
+}
+
+.domovAkcieZbor .domovAkcieZborVíkendovky {
+  background-color: #304c89;
+}
+
+.domovAkcieZbor .domovAkcieZborVylety {
+  background-color: #376de1;
+}
+.domovAkcieZbor img {
+  width: 100%;
+  height: auto;
+}
