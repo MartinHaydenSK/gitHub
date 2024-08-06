@@ -338,3 +338,48 @@ button {
   width: 100%;
   height: auto;
 }
+
+.domovFotoGaleria {
+  padding: 10px;
+  background-color: #304c89;
+}
+
+.domovFotoGaleria h1 {
+  font-size: 300%;
+  text-align: center;
+}
+
+.gallery {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 stĺpce v mriežke */
+  grid-template-rows: auto auto; /* 2 riadky */
+  gap: 10px;
+  grid-template-areas:
+    "photo1 photo1 photo2 photo2" /* Prvý riadok, 2 stĺpce pre photo1 a photo2 */
+    "photo3 photo4 photo5 photo6"; /* Druhý riadok, každý obrázok v 1 stĺpci */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+.photo2 {
+  grid-area: photo2;
+}
+.photo3 {
+  grid-area: photo3;
+}
+.photo4 {
+  grid-area: photo4;
+}
+.photo5 {
+  grid-area: photo5;
+}
+.photo6 {
+  grid-area: photo6;
+}
